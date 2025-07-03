@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> MMAtchmaker</title>
+    <style>
+    body {
+        background-color: black;
+	color: white;
+	display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+        p , h1, input, img {
+        }
+	p{
+	font-size: 30px;
+}.typewriter-font {
+    font-family: 'Courier New', monospace;
+}
+        h1 {
+            font-size: 70px;
+	-webkit-text-stroke: 1px gold;
+            text-stroke: 1px gold;
+        } .typewriter-font {
+    font-family: 'Courier New', monospace;
+}
+        input {
+            font-size: 30px; 
+        }.typewriter-font {
+    font-family: 'Courier New', monospace;
+}
+
+
+</style>
+<body>
+    <h1 class="typewriter-font" border = 2px solid gold> Find the best match up</h1>
+
+{% if error_message %}
+        <p class="error-message">{{ error_message }}</p>
+    {% endif %}
+
+    <form method="POST" action="/message">
+       <p class="typewriter-font"> Fighter Name : </p> <input type="text" name="luchador" class="typewriter-font"><br>
+       <p class="typewriter-font"> Location (Country): </p> <input type="text" name="lugar" class="typewriter-font"><br>
+        <input type="submit" value="Submit" class="typewriter-font">
+<br><br><br><br><br><br>
+<p class="typewriter-font" style="font-size: 18px;">. No answer ? Please make sure that you wrote "Surname Name" of your fighter correctly. </p>
+<p class="typewriter-font" style="font-size: 18px;">. No answer ? Please make sure that you wrote the COUNTRY where the fight will take place correctly.  </p>
+<p class="typewriter-font" style="font-size: 18px;">. Your fighter may not be in our data. Please contact us at mmatchmaker@gmail.com  </p>
+    </form>
+
+
+
+
+</body>
+</html>
