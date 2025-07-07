@@ -80,7 +80,6 @@ def calcular_mejor_rival(nombre_luchador, location):
                 newdf = newdf.iloc[index-10:index+11]
         newdf = newdf.reset_index(drop=True)
         
-        print(newdf)
         
         def last5(x):
             l5 = np.zeros(len(x))
@@ -110,7 +109,6 @@ def calcular_mejor_rival(nombre_luchador, location):
                 pr = x['pro_record'][i].split('-')
                 n = int(pr[0])+int(pr[1])+int(pr[2])
                 lpro[i] = (int(pr[0])*10)/n
-                print(pr)
             return lpro
         pro_record(newdf)
         
@@ -121,13 +119,11 @@ def calcular_mejor_rival(nombre_luchador, location):
                 fin[i] = np.float64(pr[0])/10
             return fin
         
-        print(finish_rate(newdf))
         
         
         index2 = np.where(newdf['name'] == myfighter)
         index2 = index2[0][0]
         my_fighter_country = newdf['home_country'][index2]
-        print(location)
         
         def loca(x):
             loc = np.zeros(len(x))
@@ -366,8 +362,13 @@ def luchador():
         mejor_rival = calcular_mejor_rival(nombre_luchador, location)
 
         # Renderiza una plantilla HTML con el resultado
+        #if mejor_rival is not None:
+            #return "The best rival is "+mejor_rival
         if mejor_rival is not None:
-            return "The best rival is "+mejor_rival
+            return render_template("message.html",
+                           message="The best rival is: " + mejor_rival,
+                           message1="Thanks for using MMAtchMaker!",
+                           message2="Keep training, keep winning 🥊")
         else:
             error_message = "El nombre del luchador no se encuentra en la base de datos. Por favor, inténtelo de nuevo."
             return render_template("index.html", error_message=error_message)
