@@ -59,7 +59,7 @@ Clone le dépôt, assure toi que tu as bien :
 Dans un terminal ou console Python :
 
 ```bash
-pip install flask pandas numpy
+pip install flask pandas numpy openpyxl
 ```
 
 ### 3. Lancer le serveur
