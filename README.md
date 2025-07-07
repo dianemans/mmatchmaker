@@ -1,4 +1,4 @@
-# 🥋 MMAtchMaker
+# 🥋🫎 MMAtchMaker
 
 MMAtchMaker est le **premier générateur intelligent de combats de MMA** à destination des **managers** et **matchmakers**. Il vous aide à identifier l’adversaire le plus pertinent pour votre combattant, en équilibrant **challenge sportif** (pour l'audience et la réputation) et **opportunités de progression dans le classement**.
 
@@ -90,9 +90,22 @@ Autres noms de combattants valides :
 
 - ⚠️ Ne pas ouvrir le fichier `rankfeed.xlsx` pendant l’exécution du code.
 
-## ✅ À venir
+## ⏳ En projet
 
 - Hébergement en ligne (Heroku / Render)
-- Interface responsive
-- Accès aux résultats via une API
 - Système de filtrage personnalisé
+
+## 🤝🤝🤝🤝🤝 Merci à l'équipe finlandaise !
+
+🇫🇷 Charles Brunet 
+🇪🇸 Javier Miranda
+
+
+       🟦🟦
+       🟦🟦
+       🟦🟦
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+       🟦🟦
+       🟦🟦
+       🟦🟦
