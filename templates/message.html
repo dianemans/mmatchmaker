@@ -1,0 +1,53 @@
+<!-- message.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MMAtchmaker_2</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        h1.typewriter-font {
+            font-size: 50px;
+            -webkit-text-stroke: 1px gold;
+            text-align: center; /* Centra solo el título */
+        }
+
+        p, img {
+            font-size: 30px;
+        }
+
+        .typewriter-font {
+            font-family: 'Courier New', monospace;
+        }
+
+        img {
+            background: url('static/conor_money.jpg') no-repeat;
+            background-size: cover;
+            width: 30%;
+            padding: 30px;
+            border: 2px solid gold;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+        }
+
+        input[type="text"], input[type="submit"] {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="typewriter-font">MMAtchmaker is happy to tell you that:</h1>
+    <p class="typewriter-font">{{ message }}</p>
+    <p class="typewriter-font">{{ message1 }}</p>
+    <p class="typewriter-font">{{ message2 }}</p>
+    <img src="static/conor_money.jpg" alt="Image">
+</body>
+</html>
+
+
