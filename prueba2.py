@@ -370,9 +370,9 @@ def luchador():
             return "The best rival is "+mejor_rival
         else:
             error_message = "El nombre del luchador no se encuentra en la base de datos. Por favor, inténtelo de nuevo."
-            return render_template("form.html", error_message=error_message)
+            return render_template("index.html", error_message=error_message)
         
-    return render_template("form.html")
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run()
